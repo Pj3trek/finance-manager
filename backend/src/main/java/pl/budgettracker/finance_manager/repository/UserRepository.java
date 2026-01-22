@@ -6,5 +6,5 @@ import pl.budgettracker.finance_manager.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
-    User findByUsername(String username);
+    User findByEmail(String email);
 }
